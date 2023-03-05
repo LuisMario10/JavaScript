@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        div {
+            font-family: Arial, Helvetica, sans-serif;
+            width: 220px;
+            height: 220px;
+            background-color: rgb(93, 179, 161);
+            line-height: 200px;
+            text-align: center;
+            font-size: 1.3em;
+            font-weight: bold;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="area" >
+        Interaja comigo.
+    </div>
+    <script>
+        var area = document.getElementById('area')
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+        function clicar() {
+            area.style.background = 'green'
+            area.innerText = 'isso foi um clique'
+        }
+        function entrar() {
+            area.style.background = 'red'
+            area.innerText = 'Entrou o Mouse !'
+        }
+        function sair() {
+            area.style.background = 'black'
+            area.style.color = 'white'
+            area.innerText = 'Mouse saiu'
+        }
+    </script>
+</body>
+</html>

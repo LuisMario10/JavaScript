@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ex005</title>
+    <style>
+        body {
+            background: rgb(150, 227, 140)
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <h1>Iniciando estudos de <strong>DOM</strong></h1>
+    <p>Aqui vai o resultado</p>
+    <br>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim libero cumque sunt corrupti sequi necessitatibus in modi repudiandae? Minus illum doloribus deleniti nesciunt repudiandae sit a quos temporibus aut quibusdam?</p>
+    <div id="msg">Clique em mim!</div>
+    <br>
+    <div name="ma">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, ullam sed esse minus iure, iusto eum consequatur quidem deleniti dolorem ea laboriosam, voluptas placeat fugit fuga? Ipsa excepturi cupiditate suscipit.</div> 
+    <br>
+    <div class="d1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum vitae unde, voluptatem facilis quisquam ut beatae quae illum accusamus, corporis dolor, tempora cum reprehenderit? Sequi, a illum. Earum, asperiores deserunt?</div><br>
+    <div class="d1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim cupiditate voluptatibus odit aliquid porro eligendi in delectus fugiat quam ratione nihil sed magnam ullam, vitae omnis nisi, ipsa voluptate esse.</div><br>
+    <div id="d2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo reiciendis perferendis suscipit, sint eligendi esse placeat deserunt consectetur? Officiis ab autem, sunt officia perferendis ad ut beatae et sed pariatur?</div>
+
+
+    <script>
+        var corpo = window.document.body
+        var p = document.getElementsByTagName('p')[0]
+        var m = document.getElementById('msg')
+        var m2 = document.getElementsByName('ma')[0]
+        var dv = document.getElementsByClassName('d1')[1]
+        var dv3 = document.querySelector('div#d2')
+        corpo.style.background = 'grey'
+        m.style.color = 'red'
+        m2.style.color = 'lightblue'
+        dv.style.background = 'pink'
+        dv3.style.background = 'lightgrey'
+
+    </script>
+</body>
+</html>
