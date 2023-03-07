@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(36, 220, 16);
+    font: normal 15pt Arial;
+}
+
+header {
+    background-image: linear-gradient(to left, rgb(36, 220, 16), rgb(139, 198, 27));
+}
+
+header h1 {
+    text-align: center;
+}
+
+section {
+    background-color: rgba(255, 255, 255, 0.65);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid black;
+}

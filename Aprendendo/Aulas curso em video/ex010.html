@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc de velocidade</title>
+</head>
+<body>
+    <h1>Calculo de velocidade</h1>
+    <div id="container">
+        <label for="txtvel">Velocidade do Automovel: </label>
+        <input type="number" size="1" name="txtvel" id="txtvel">
+        <input type="button" value="Verificar" onclick="calcVelo()">
+        <div id="resultado">
+
+        </div>
+    </div>
+    <script>
+        function calcVelo() {
+            var tvel = document.getElementById('txtvel')
+            var res = document.getElementById('resultado')
+            velo = Number(tvel.value)
+            res.innerHTML = `Sua velocidade é ${velo} Km/h`
+            if (velo > 60) {
+                res.innerHTML += '<p>Você Ultrapassou a Velocidade Limite</p'
+            }
+            
+            else {
+                res.innerHTML += '<p>Voce está dentro do limite de velocidade, continue assim!</p>'
+            }
+        }
+    </script>
+</body>
+</html>
