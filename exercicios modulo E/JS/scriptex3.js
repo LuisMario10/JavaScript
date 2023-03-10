@@ -1,11 +1,18 @@
 function calcMult() {
-    var n = document.getElementById('num')
-    var res = document.getElementById('res')
-    num = Number(n.value)
-    var i = 1
-    while (i <= 10) {
-        res.innerText = `${num} x ${i} = ${num*i}`
-        i++
-        
+    let num = document.getElementById('num')
+    let res = document.getElementById('res')
+    if (num.value.length == 0) {
+        alert('Campo vazio! tente novamente')
+    }
+    else {
+        let n = Number(num.value)
+        let c = 1
+        res.innerHTML = ' '
+        while (c <= 10)  {
+            let item = document.createElement('option')
+            item.text = `${n} x ${c} = ${n*c}`
+            res.appendChild(item)
+            c++
+        }
     }
 }
